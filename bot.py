@@ -16,6 +16,10 @@ async def on_ready():
 async def hello(ctx):
   await ctx.send("Hey there!")
   
+@bot.command()
+async def dm(ctx):
+  await ctx.author.send("Hello World! This is a DM!")
+  
 #This is NOT recommended, your token should be in a .json file or any file that can keep it safe.
 token = "Token"
 bot.run(token)
