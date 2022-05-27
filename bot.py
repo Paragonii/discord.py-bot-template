@@ -4,7 +4,7 @@ from discord.ext import commands
 
 #This is essential to making the bot
 bot = commands.Bot(command_prefix="prefix")
-#let me explain: This basically tells the code that the "bot" variable will be used for commands.
+#let me explain: This basically tells the code that the "bot" variable will be used for commands and events.
 
 @bot.event
 async def on_ready():
